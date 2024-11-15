@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class Reverse_Array {
 
@@ -10,14 +10,13 @@ public class Reverse_Array {
 
     private static void reverseAnArray(String[] animals) {
         System.out.println("Reversed array elements are: ");
-        StringBuilder reverseElement = null;
 
-        for (int i=0;i<animals.length;i++) {
+        for (String animal : animals) {
 
-            reverseElement= new StringBuilder(animals[i]);
+            StringBuilder reverseElement = new StringBuilder(animal);
             reverseElement.reverse();
             reverseElement.append(" ");
-            System.out.print(reverseElement.toString());
+            System.out.print(reverseElement);
         }
 
     }
